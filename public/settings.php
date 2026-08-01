@@ -265,8 +265,10 @@ body.light .footer{ border-color: var(--border-light); color: var(--text-muted-l
 </div>
 
 <footer class="footer">
-    <img src="icon.png" alt="Phosory Logo" class="footer-logo"/>
-    Made by Phosory
+    <a href="https://phosory.netlify.com" target="_blank" rel="noopener noreferrer">
+        <img src="icon.png" alt="Phosory Logo" class="footer-logo"/>
+        Made by Phosory
+    </a>
 </footer>
 
 </body>
