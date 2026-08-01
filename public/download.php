@@ -196,6 +196,10 @@ if(isset($session_data) && isset($CLIENT_ID)){
 <meta property="og:title" content="Download Files | UniFile">
 <meta property="og:description" content="Securely download files shared on your local network.">
 <meta property="og:image" content="https://unifile.infinityfreeapp.com/uni.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="UniFile">
 <link rel="icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -431,6 +435,13 @@ function refreshAll(){
 // Auto refresh every 2s
 setInterval(refreshAll, 2000);
 refreshAll(); // run once on load
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/service-worker.js')
+  .then(() => console.log('UniFile SW Registered'))
+  .catch(err => console.log('SW Error:', err));
+}
+
 </script>
 </body>
 </html>

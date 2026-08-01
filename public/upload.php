@@ -193,11 +193,13 @@ if(isset($_GET['accept']) || isset($_GET['reject'])){
 <meta name="description" content="Select files and share them instantly with devices on your local network using UniFile. Fast, secure, no internet needed.">
 <meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#01E5C0">
-
 <meta property="og:title" content="Upload Files | UniFile">
 <meta property="og:description" content="Select files and share them instantly on your LAN.">
 <meta property="og:image" content="https://unifile.infinityfreeapp.com/uni.png">
-
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="UniFile">
 <link rel="icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -435,6 +437,12 @@ setInterval(loadFiles, 2000);
 setInterval(loadUsers, 2000);
 setInterval(checkIncoming, 2000);
 loadFiles(); loadUsers();
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/service-worker.js')
+  .then(() => console.log('UniFile SW Registered'))
+  .catch(err => console.log('SW Error:', err));
+}
 </script>
 </body>
 </html>
