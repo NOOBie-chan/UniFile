@@ -15,14 +15,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to InfinityFree via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./public/
           server-dir: /htdocs/
-          dangerous-clean-slate: false
+          protocol: ftp
+          port: 21
           exclude: |
             **/.git*
             **/.git*/**
@@ -31,4 +32,3 @@ jobs:
             **/chunks/**
             **/data/**
             **/node_modules/**
-            **/.vscode/**
