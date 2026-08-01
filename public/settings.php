@@ -265,7 +265,7 @@ body.light .footer{ border-color: var(--border-light); color: var(--text-muted-l
 </div>
 
 <footer class="footer">
-    <img src="assets/phosory-logo.png" alt="Phosory Logo" class="footer-logo" onerror="this.style.display='none'">
+    <img src="icon.png" alt="Phosory Logo" class="footer-logo" onerror="this.style.display='none'">
     Made by Phosory
 </footer>
 
