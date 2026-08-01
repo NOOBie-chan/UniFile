@@ -166,7 +166,7 @@ body.light footer{ color: var(--text-muted-light); }
     </nav>
     <!-- MAIN CONTENT -->
     <div class="container">
-        <h1>Private. Local. Instant.</h1>
+        <h1>Private. Local. Instant. WORKING</h1>
         <p class="subtitle">Transfer files between any 2 devices on the same WiFi. No internet. No cloud. No account. No limits.</p>
         <div class="cards">
             <!-- SEND CARD -->
