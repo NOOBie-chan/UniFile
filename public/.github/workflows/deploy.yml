@@ -1,0 +1,27 @@
+name: Deploy to InfinityFree
+on:
+  push:
+    branches: [ main ] # runs when you push to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Upload to InfinityFree FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./
+        server-dir: /htdocs/ # THIS IS IMPORTANT. This is your public folder
+        dangerous-clean-slate: false # set true only if you want to delete everything first
+        exclude: |
+          **/.git*
+          **/.github*
+          **/node_modules/**
+          **/sessions/**  # don't upload other people's files
+          settings.json   # don't overwrite server settings

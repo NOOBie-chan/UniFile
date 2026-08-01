@@ -1,0 +1,26 @@
+# ============ UniFile Live Data ============
+# Don't upload these - they are created on the server
+/sessions/
+/uploads/
+/chunks/
+/data/
+settings.json
+session.json
+queue.json
+lock.json
+
+# ============ PHP / Node ============
+/vendor/
+node_modules/
+.env
+.env.local
+composer.phar
+composer.lock
+
+# ============ System / Editor ============
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
