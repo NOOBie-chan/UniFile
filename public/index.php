@@ -43,6 +43,10 @@ if($lock['enabled'] && !isset($_SESSION['unlocked'])){
 <meta property="og:title" content="UniFile | Secure P2P File Sharing">
 <meta property="og:description" content="Send files instantly between devices on your local network. No cloud, no limits, 100% private.">
 <meta property="og:image" content="https://unifile.infinityfreeapp.com/uni.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="UniFile - Secure P2P File Sharing by Phosory">
+<meta property="og:site_name" content="UniFile">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
