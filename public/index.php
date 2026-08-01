@@ -32,6 +32,26 @@ if($lock['enabled'] && !isset($_SESSION['unlocked'])){
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="UniFile lets you send files instantly between devices on your local network. No cloud, no limits, 100% private and free.">
+<meta name="keywords" content="p2p file sharing, lan file transfer, local network, free file transfer, secure sharing">
+<meta name="author" content="Phosory">
+<meta name="theme-color" content="#01E5C0">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://unifile.infinityfreeapp.com/">
+<meta property="og:title" content="UniFile | Secure P2P File Sharing">
+<meta property="og:description" content="Send files instantly between devices on your local network. No cloud, no limits, 100% private.">
+<meta property="og:image" content="https://unifile.infinityfreeapp.com/uni.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://unifile.infinityfreeapp.com/">
+<meta property="twitter:title" content="UniFile | Secure P2P File Sharing">
+<meta property="twitter:description" content="Send files instantly between devices on your local network. No cloud, no limits.">
+<meta property="twitter:image" content="https://unifile.infinityfreeapp.com/uni.png">
+
+<link rel="icon" href="favicon.ico">
 <title>UniFile - Private Local File Sharing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

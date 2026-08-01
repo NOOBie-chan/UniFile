@@ -50,7 +50,15 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Verify your device to securely receive files through UniFile P2P network.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#01E5C0">
+<meta property="og:title" content="Verify Device | UniFile">
+<meta property="og:description" content="Verify your device to receive files securely.">
+<meta property="og:image" content="https://unifile.infinityfreeapp.com/uni.png">
+<link rel="icon" href="favicon.ico">
 <title>Join Session - UniFile</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>

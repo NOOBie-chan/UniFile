@@ -187,8 +187,18 @@ if(isset($_GET['accept']) || isset($_GET['reject'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Send - UniFile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upload Files | UniFile</title>
+<meta name="description" content="Select files and share them instantly with devices on your local network using UniFile. Fast, secure, no internet needed.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#01E5C0">
+
+<meta property="og:title" content="Upload Files | UniFile">
+<meta property="og:description" content="Select files and share them instantly on your LAN.">
+<meta property="og:image" content="https://unifile.infinityfreeapp.com/uni.png">
+
+<link rel="icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{ --bg: #0a0f1e; --bg2: #16213E; --glass: rgba(255, 255, 255, 0.05); --text: #e6eefc; --muted: #94a3b8; --accent: #01E5C0; --danger: #EF4444; --ok: #10B981; }
