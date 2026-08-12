@@ -162,7 +162,6 @@ body.light footer{ color: var(--text-muted-light); }
 <body class="<?php echo $theme; ?>">
 <div class="bg-blob blob1"></div>
 <div class="bg-blob blob2"></div>
-<?php if($show_lock): ?>
     <!-- APP LOCK SCREEN -->
     <!-- <div class="lock-container">
         <form method="POST" class="lock-box">
@@ -174,7 +173,6 @@ body.light footer{ color: var(--text-muted-light); }
             <button class="lock-btn">Unlock</button>
         </form>
     </div> -->
-<?php else: ?>
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo-wrap">
@@ -215,7 +213,6 @@ body.light footer{ color: var(--text-muted-light); }
     <footer>
         © <?php echo date('Y'); ?> UniFile. 100% Private. Files never leave your LAN.
     </footer>
-<?php endif; ?>
 <script>
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/service-worker.js')
