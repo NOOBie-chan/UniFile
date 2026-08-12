@@ -164,7 +164,7 @@ body.light footer{ color: var(--text-muted-light); }
 <div class="bg-blob blob2"></div>
 <?php if($show_lock): ?>
     <!-- APP LOCK SCREEN -->
-    <div class="lock-container">
+    <!-- <div class="lock-container">
         <form method="POST" class="lock-box">
             <div class="logo-text" style="font-size:2.2rem;margin-bottom:10px">UniFile</div>
             <h2>🔒 App Locked</h2>
@@ -173,7 +173,7 @@ body.light footer{ color: var(--text-muted-light); }
             <input type="password" name="unlock_pin" maxlength="4" pattern="\d{4}" required autofocus inputmode="numeric">
             <button class="lock-btn">Unlock</button>
         </form>
-    </div>
+    </div> -->
 <?php else: ?>
     <!-- NAVBAR -->
     <nav class="navbar">
